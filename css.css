@@ -1,11 +1,18 @@
+
 body {
 	margin-top: 0;
 	user-select: none;
+	overflow: scroll;
+	overflow-x: hidden;
+	padding-right: 100px;
 }
 body .smooth-container {
 	scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar { 
+    display: none; 
+}
 
 #opening {
 	float: top;
@@ -189,16 +196,8 @@ ul li:nth-child(7) {
 	font-size: 200%;
 	}
 
-	#trapezoid {
-	border-bottom: 400px solid green;
-	border-left: 200px solid transparent;
-	border-right: 5200px solid transparent;
-	height: 0;
-	width: 400px;
-	left: 80%;
-	top: 70%;
-	color:  rgba(121, 132, 132, 0.25);
-}
+	a:link a:visited a:hover a:active{
+		color: red;
 	}
 
 @media only screen and (max-width: 767px){
