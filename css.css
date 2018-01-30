@@ -1,20 +1,38 @@
 body {
 	margin-top: 0;
+	user-select: none;
+}
+body .smooth-container {
+	scroll-behavior: smooth;
 }
 
+
 #opening {
+	float: top;
 	position: absolute;
 	background-color: black;
 	color: white;
-	width: 1920px;
-	height: 100%;
+	width: 100%;
+	height: 980px;
 	display: inline-block;
-	float: left;
 	overflow: show;
-	clear: left;
+	top: 0%;
 	left: 0%;
 	background-attachment: fixed;
 	background-size: cover;
+}
+
+#linkslist {
+	list-style-type: none;
+	margin: 0px;
+	padding-right: 50px;
+  padding-left: 46px;
+	overflow: show;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	display: block;
+	list-style-type: none;
 }
 
 #hello {
@@ -34,8 +52,11 @@ height: 100%;
 width: 100%;
 pointer-events: none;
 z-index: 1000;
+position: fixed;
 
 }
+
+#useless .window {display: block; position: relative; top: -250px; visibility: hidden;}
 
 
 li {
@@ -83,21 +104,23 @@ ul li:nth-child(7) {
 #rightbutton {
 	position: absolute;
 	display: inline-block;
-		bottom: 45%;
-	left: 95%;
+	transform: rotate(90deg);
+	bottom: 2%;
+	left: 50%;
 	width: 20px;
 	height: 20px;
 	content: "fast-forward-button.svg";
 }
 
+
 #pagetwo {
 	position: absolute;
-  width: 3840px;
+  width: 100%;
   display: inline-block;
-  float: left;
-  height: 100%;
-  background-image: url("https://image.ibb.co/ci5xzG/space.jpg") ;
-  left: 100%;
+  height: 7680px;
+  left: 0%;
+  top: 980px;
+  background-image: url("https://image.ibb.co/eZSv9R/space.jpg") ;
   background-attachment: fixed;
   background-size: cover;
   
@@ -106,19 +129,31 @@ ul li:nth-child(7) {
 #about {
 	position: absolute;
 	background-color: rgba(121, 132, 132, 0.25);
-	top: 35%;
-	left: 25%;
+	top: 8%;
+	left: 32%;
 	font-family: 'Open Sans', sans-serif;
-	width: 10%;
-	height: 90px;
+	width: 35%;
+	height: 100%x;
 	font-size: 90%;
 	padding: 1%;
 }
 
+#useless {
+	top: 5.5%;
+		float: top;
+	position: absolute;
+	color: white;
+	width: 100%;
+	height: 2px;
+	display: inline-block;
+	overflow: show;
+	left: 0%;
+}
+
 #me {
 	position: absolute;
-	top: 30%;
-	left: 31%;
+	top: 7%;
+	left: 50%;
 	transform: translate(-50%,-50%);
 	margin: 0;
 	padding: 0;
@@ -127,6 +162,18 @@ ul li:nth-child(7) {
 	font-size: 200%;
 	}
 
+#links {
+		position: absolute;
+	background-color: rgba(121, 132, 132, 0.25);
+	top: 18%;
+	left: 42%;
+	font-family: 'Open Sans', sans-serif;
+	width: 10%;
+	height: 90px;
+	font-size: 90%;
+	padding: 1%;
+	color: black;
+}
 
 
 #stop {
@@ -134,13 +181,24 @@ ul li:nth-child(7) {
 	width: 8%;
 	height: 5%;
 	position: absolute;
-	top:  28%;
-	left: 81%;
+	top:  30%;
+	left: 42%;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 200%;
 	}
 
+	#trapezoid {
+	border-bottom: 400px solid green;
+	border-left: 200px solid transparent;
+	border-right: 5200px solid transparent;
+	height: 0;
+	width: 400px;
+	left: 80%;
+	top: 70%;
+	color:  rgba(121, 132, 132, 0.25);
+}
+	}
 
 @media only screen and (max-width: 767px){
     .col-m-1 {width: 8.33%;}
